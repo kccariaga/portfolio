@@ -6,10 +6,16 @@ class LandingPage extends Component {
       <div style ={{width: '100%', margin:'auto'}}>
         <Grid className = "landing-grid">
           <Cell col={12}>
-            <img 
+            {/* <img 
               src= "https://static1.fjcdn.com/comments/Because+not+everyone+is+a++weeaboo+_32cdc4c78bb2ef5deb5fa9182a320039.jpg" 
               alt = "avatar" 
               className = "avatar-img"
+            /> */}
+
+            <img
+              src="images/profile_pic3.jpg"    
+              alt="avatar"
+              className="avatar-img"
             />
 
             <div className="banner-text">

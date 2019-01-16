@@ -13,6 +13,7 @@ class App extends Component {
         <Layout>
           <Header className="header-color" title="My Portfolio" scroll>
             <Navigation>
+              <Link to="/portfolio"><i className="fa fa-home" aria-hidden="true" /></Link>
               <Link to="/resume">Resume</Link>
               <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>

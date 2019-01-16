@@ -8,14 +8,18 @@ class Projects extends Component {
   }
   
   toggleCategories(){
+
+  
     if(this.state.activeTab === 0){
+      // Web  Applications
       return(
+        <div className="projects-grid">
         <Card shadow={5} style = {{minWidth:'50', margin:'auto'}}>
-          <CardTitle style={{ color: 'fff', height: '176px', background:'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png) center / cover'}}> 
-          Project #1
+          <CardTitle style={{ color: 'white', height: '176px', background:'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover'}}> 
+          Project Title 
           </CardTitle>
 
-          {/* Insert Project Description Here */}
+          {/* Insert Project Description */}
           <CardText>
           Lorem ipsum dolor sit amet, consectetur 
           adipiscing elit, sed do eiusmod tempor incididunt 
@@ -32,16 +36,151 @@ class Projects extends Component {
           <CardMenu style={{color:'fff'}}>
             <IconButton name="share" />
           </CardMenu>
-        
         </Card>
+
+
+        <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
+          <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
+            Project Title
+          </CardTitle>
+
+          {/* Insert Project Description */}
+          <CardText>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat...
+          </CardText>
+
+          <CardActions border>
+            <Button colored >Github</Button>
+            <Button colored >Live Demo</Button>
+          </CardActions>
+
+          <CardMenu style={{ color: 'fff' }}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+
+        <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
+          <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
+            Project Title
+          </CardTitle>
+
+          {/* Insert Project Description */}
+          <CardText>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat...
+          </CardText>
+
+          <CardActions border>
+            <Button colored >Github</Button>
+            <Button colored >Live Demo</Button>
+          </CardActions>
+
+          <CardMenu style={{ color: 'fff' }}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+
+
+       </div>
+
+        
       )
     }else if(this.state.activeTab ===1){
       return(
-        <div><h1>These are my Mobile Applications </h1></div>
+        //Mobile Applications
+        <div className="projects-grid">
+          <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
+            <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
+              Project Title
+          </CardTitle>
+
+            {/* Insert Project Description */}
+            <CardText>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat...
+          </CardText>
+
+            <CardActions border>
+              <Button colored >Github</Button>
+              <Button colored >Live Demo</Button>
+            </CardActions>
+
+            <CardMenu style={{ color: 'fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+
+        </div>
+
       )
     }else if (this.state.activeTab ===2){
       return(
-        <div><h1> These are examples from my Coursework</h1></div>
+        //Course Code Examples
+        <div className="projects-grid">
+          <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
+            <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
+              Project Title
+          </CardTitle>
+
+            {/* Insert Project Description */}
+            <CardText>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat...
+          </CardText>
+
+            <CardActions border>
+              <Button colored >Github</Button>
+              <Button colored >Live Demo</Button>
+            </CardActions>
+
+            <CardMenu style={{ color: 'fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+
+          <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
+            <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
+              Project Title
+          </CardTitle>
+
+            {/* Insert Project Description */}
+            <CardText>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat...
+          </CardText>
+
+            <CardActions border>
+              <Button colored >Github</Button>
+              <Button colored >Live Demo</Button>
+            </CardActions>
+
+            <CardMenu style={{ color: 'fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+
+
+        </div>
+
       )
     }
   }
@@ -58,14 +197,13 @@ class Projects extends Component {
 
         </Tabs>
 
-        <section className="projects-grid">
-          <Grid className="projects-grid">
+       
+          <Grid >
             <Cell col={12}>
               <div className="content">{this.toggleCategories()}</div>
             </Cell>
           </Grid>
-          {/* {this.toggleCategories()} */}
-        </section>
+   
       
       </div>
     )
