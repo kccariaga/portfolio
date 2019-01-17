@@ -53,8 +53,8 @@ class Contact extends Component{
             <MDBCol md="3" class="center"></MDBCol>
             <MDBCol md="6" class="center">
               <form 
-                // action="https://script.google.com/macros/s/AKfycbwVAOtE5c1aMTSi2eK6oXvECAd8cyZ5hDTfQrKTZQ/exec"
-                // method="POST" 
+                action="https://script.google.com/macros/s/AKfycbwmwd5Y6G3WLSaCG6sCB7iwVVBvfPJXC1lOV9CVZIlTL2uhK-ab/exec"
+                method="POST" 
                 // className="needs-validation"
                 // onSubmit={this.submitHandler}
                 // noValidate  
