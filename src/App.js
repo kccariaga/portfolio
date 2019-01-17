@@ -13,20 +13,19 @@ class App extends Component {
         <Layout>
           <Header className="header-color" title="Karen Cariaga" scroll>
             <Navigation>
-              <Link to="/portfolio/">Home</Link>
-              <Link to="/portfolio/resume">Resume</Link>
-              <Link to="/portfolio/aboutme">About Me</Link>
-              <Link to="/portfolio/projects">Projects</Link>
-              <Link to="/portfolio/contact">Contact</Link>
+              <Link to="/portfolio"><i className="fa fa-home" aria-hidden="true" /></Link>
+              <Link to="/resume">Resume</Link>
+              <Link to="/aboutme">About Me</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/contact">Contact</Link>
             </Navigation>
           </Header>
           <Drawer title="Karen Cariaga">
             <Navigation>
-              <Link to="/portfolio/">Home</Link>
-              <Link to="/portfolio/resume">Resume</Link>
-              <Link to="/portfolio/aboutme">About Me</Link>
-              <Link to="/portfolio/projects">Projects</Link>
-              <Link to="/portfolio/contact">Contact</Link>
+              <Link to="/resume">Resume</Link>
+              <Link to="/aboutme">About Me</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
           <Content>

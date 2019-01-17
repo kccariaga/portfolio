@@ -7,7 +7,7 @@ class LandingPage extends Component {
         <Grid className = "landing-grid">
           <Cell col={12}>
             <img
-              src="/images/profilepic3.jpg"
+              src={'./images/profilepic3.jpg'}
               alt="avatar"
               className="avatar-img"
             />
