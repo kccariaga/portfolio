@@ -3,21 +3,6 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon} from 'mdbreact';
 
 
 class Contact extends Component{
-//  var $form = $('form#test-form'),
-//   url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
-
-// $('#submit-form').on('click', function (e) {
-//   e.preventDefault();
-//   var jqxhr = $.ajax({
-//     url: url,
-//     method: "GET",
-//     dataType: "json",
-//     data: $form.serializeObject()
-//   }).success(
-//     // do something
-//   );
-// })
-
   state = {
     name: "",
     email: "",
@@ -35,7 +20,6 @@ class Contact extends Component{
   };
 
   render(){
-    
     return(
       // <div className="contact-grid">
       //   <form method="POST" action="https://formspree.io/karenc.cariaga@gmail.com">
@@ -46,15 +30,15 @@ class Contact extends Component{
       //   </form>
       // </div>
 
-      
+
       <div className="contact-grid">
         <MDBContainer>
           <MDBRow>
             <MDBCol md="3" class="center"></MDBCol>
             <MDBCol md="6" class="center">
               <form 
-                // action="https://script.google.com/macros/s/AKfycbwVAOtE5c1aMTSi2eK6oXvECAd8cyZ5hDTfQrKTZQ/exec"
-                // method="POST" 
+                action="https://script.google.com/macros/s/AKfycbwmwd5Y6G3WLSaCG6sCB7iwVVBvfPJXC1lOV9CVZIlTL2uhK-ab/exec"
+                method="POST"
                 // className="needs-validation"
                 // onSubmit={this.submitHandler}
                 // noValidate  
@@ -146,7 +130,7 @@ class Contact extends Component{
 
                 {/* Submit Button */}
                 <div className="text-center mt-4">
-                  <MDBBtn type="submit" color="success">
+                  <MDBBtn color="success" outline type="submit">
                     Send
                   <MDBIcon icon="paper-plane-o" className="ml-2" />
                   </MDBBtn>
