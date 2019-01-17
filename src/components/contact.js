@@ -26,8 +26,9 @@ class Contact extends Component{
   };
 
   submitHandler = event => {
-    event.preventDefault();
     event.target.className += " was-validated";
+    return("Message Sent!")
+
   };
 
   changeHandler = event => {
@@ -55,9 +56,9 @@ class Contact extends Component{
               <form 
                 action="https://script.google.com/macros/s/AKfycbwmwd5Y6G3WLSaCG6sCB7iwVVBvfPJXC1lOV9CVZIlTL2uhK-ab/exec"
                 method="POST" 
-                // className="needs-validation"
-                // onSubmit={this.submitHandler}
-                // noValidate  
+                className="needs-validation"
+                onSubmit={this.submitHandler}
+                noValidate  
                 >
                 <p className="h4 text-center bold mb-4" >Contact Me!</p>
 
