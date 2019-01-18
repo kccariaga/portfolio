@@ -25,15 +25,16 @@ class Contact extends Component{
     message: ""
   };
 
-  submitHandler = event => {
-    event.target.className += " was-validated";
-    return("Message Sent!")
 
-  };
+  submitHandler = event => {
+    //event.preventDefault();
+    event.target.className += " was-validated";
+  };;
 
   changeHandler = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
+
 
   render(){
     
@@ -58,7 +59,7 @@ class Contact extends Component{
                 method="POST" 
                 className="needs-validation"
                 onSubmit={this.submitHandler}
-                noValidate  
+                Validate  
                 >
                 <p className="h4 text-center bold mb-4" >Contact Me!</p>
 
@@ -147,7 +148,7 @@ class Contact extends Component{
 
                 {/* Submit Button */}
                 <div className="text-center mt-4">
-                  <MDBBtn type="submit" color="success">
+                  <MDBBtn type="submit"  color="success">
                     Send
                   <MDBIcon icon="paper-plane-o" className="ml-2" />
                   </MDBBtn>
