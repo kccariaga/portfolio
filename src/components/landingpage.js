@@ -15,7 +15,7 @@ class LandingPage extends Component {
             <div className="banner-text">
               <h1>Software Engineer</h1>
               <hr/>
-              <p> Java | C/C++ | Python | Javascript | HTML5 | CSS | React | Node | Bootstrap  </p>
+              <p> Java | C | C++ | Python | PostgreSQL | Javascript | HTML | CSS | React | Node </p>
 
 
               <div className="social-links">

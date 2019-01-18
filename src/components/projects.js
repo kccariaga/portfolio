@@ -14,14 +14,13 @@ class Projects extends Component {
       // Web  Applications
       return(
         <div className="projects-grid">
+
+        {/* Let's Code Together */}
         <Card shadow={5} style = {{minWidth:'50', margin:'auto'}}>
-          <CardTitle style={{ color: 'white', height: '176px', 
-          background:'url(/portfolio/images/letscodetogether.png) center / cover'}}> 
-          <div className="card-title">
+          <CardTitle style={{ color: 'gray', height: '176px', 
+          background:'url(/portfolio/images/letscodetogether.png) center / cover'}}>    
           Let's Code Together
-          </div>
           </CardTitle>
-          {/* Insert Project Description */}
           <CardText>
            Lets Code Together is a Facebook Build Day Hack-a-thon collaboration
            with the aim to bring developers together to meet up, create applications and 
@@ -36,7 +35,7 @@ class Projects extends Component {
 
           <CardActions border>
               <Button colored href="https://github.com/kccariaga/facebook_build_day_challenge" target="_blank" >Github</Button>
-            <Button colored >Live Demo(Coming Soon!)</Button>
+            {/* <Button colored >Live Demo(Coming Soon!)</Button> */}
           </CardActions>
 
           <CardMenu style={{color:'fff'}}>
@@ -44,14 +43,13 @@ class Projects extends Component {
           </CardMenu>
         </Card>
 
-
+        {/* Mercenary */}
         <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
-          <CardTitle style={{ color: 'white', height: '176px', background: 'url(/portfolio/images/mercenary.png) center / cover' }}>
+          <CardTitle style={{ color: 'gray', height: '176px', background: 'url(/portfolio/images/mercenary.png) center / cover' }}>
             Mercenary
           </CardTitle>
-
-          {/* Insert Project Description */}
           <CardText>
+            CMPS183: Web Applications<br/>
             Mercenary is an rpg-idle game that follows an 
             unnamed mercenary who has taken the task of hunting down 
             a mysterious group that attacked the noble house Lancaster 
@@ -60,19 +58,46 @@ class Projects extends Component {
             and reach your final destination.
           <br/>
           <br/>
-          <br/>
-              This website is powered using web2py, vue.js, HTML, CSS,
+              This website is powered by web2py, vue.js, HTML, CSS,
           </CardText>
 
           <CardActions border>
               <Button colored href="https://github.com/JCastelan/mercenary_game" target="_blank">Github</Button>
-            <Button colored >Live Demo(Coming Soon!)</Button>
+            {/* <Button colored >Live Demo(Coming Soon!)</Button> */}
           </CardActions>
 
           <CardMenu style={{ color: 'fff' }}>
             <IconButton name="share" />
           </CardMenu>
         </Card>
+
+        {/* SEADS Data Visualization */}
+          <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
+            <CardTitle style={{ color: 'gray', height: '176px', background: 'url(/portfolio/images/seads.png) center / cover' }}>
+              SEADS Data Visualization
+          </CardTitle>
+            <CardText>
+              CMPS119: Software for Society<br/>
+              This application was created for the non-profit organization 
+              SEADS at UC-Santa Cruz. This single-page application displays
+              energy consumption data from various panels(HVAC, Water Heater, Solar, Kitchen)
+              in the form of a radial pi chart with a time slider.
+              
+              <br />
+              <br />
+              <br />
+              This website is powered by D3.js, Javascript, HTML and CSS.
+          </CardText>
+
+            <CardActions border>
+              <Button colored href="https://github.com/sharad97/SEADS_Visualization" target="_blank">Github</Button>
+              <Button colored href="https://sharad97.github.io/SEADS_Visualization/FInal/index.html" target="_blank" >Live Demo</Button>
+            </CardActions>
+
+            <CardMenu style={{ color: 'fff' }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
 
        </div>
 
@@ -82,23 +107,26 @@ class Projects extends Component {
       return(
         //Mobile Applications
         <div className="projects-grid">
+        {/* KZSC Radio */}
           <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
-            <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
-              Project Title
+            <CardTitle style={{ color: 'gray', height: '176px', background: 'url(/portfolio/images/kzsc.png) center / cover' }}>
+              KZSC Radio
           </CardTitle>
-
-            {/* Insert Project Description */}
             <CardText>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat...
+            CMPS121: Mobile Applications<br/>
+            This is an improved version of the existing KZSC Radio app where the 
+            user can stream 88.1FM on their phones. The new features include live 
+            chat with the DJ and other listeners, a donate page, playlist schedule,
+            and album information.
+            <br/>
+             <br/>
+             The tools used to create this application were Android Studio, Java and XML.
           </CardText>
 
             <CardActions border>
-              <Button colored >Github</Button>
-              <Button colored >Live Demo</Button>
+              <Button colored href="https://github.com/kemunoz/kzscradio" target="_blank">Github</Button>
+              <Button colored href="https://drive.google.com/file/d/1URhyYZD5JEdcOoTjqVTmRkHZO6qxalRo/view?usp=sharing"
+                              target="_blank" >Live Demo</Button>
             </CardActions>
 
             <CardMenu style={{ color: 'fff' }}>
@@ -106,63 +134,41 @@ class Projects extends Component {
             </CardMenu>
           </Card>
 
+          {/* Script Scribble */}
+            <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
+              <CardTitle style={{ color: 'gray', height: '176px', background: 'url(/portfolio/images/scriptscribble.png) center / cover' }}>
+                Script Scribble
+          </CardTitle>
+              <CardText>
+                CMPS115: Intro to Software Engineering <br />
+                Inspired by Scratch, Script Scribble is an education mobile app intended to 
+                teach programming logic to younger audiences through the use
+                of draggable blocks. This was a project done in a team of 5, using SCRUM
+                to handle project management
+             <br />
+              <br/>
+                The tools used to create this application were Android Studio, Java and XML.
+          </CardText>
+
+              <CardActions border>
+                <Button colored href="https://bitbucket.org/mcsquizzy123/script_scribble/src/master/" target="_blank">Bitbucket</Button>
+                <Button colored href="https://streamable.com/xqblv"
+                  target="_blank" >Live Demo</Button>
+              </CardActions>
+
+              <CardMenu style={{ color: 'fff' }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
 
         </div>
-
       )
     }else if (this.state.activeTab ===2){
       return(
         //Course Code Examples
         <div className="projects-grid">
-          <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
-            <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
-              Project Title
-          </CardTitle>
-
-            {/* Insert Project Description */}
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat...
-          </CardText>
-
-            <CardActions border>
-              <Button colored >Github</Button>
-              <Button colored >Live Demo</Button>
-            </CardActions>
-
-            <CardMenu style={{ color: 'fff' }}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-
-          <Card shadow={5} style={{ minWidth: '50', margin: 'auto' }}>
-            <CardTitle style={{ color: 'white', height: '176px', background: 'url(http://www.randomkittengenerator.com/cats/rotator.php) center / cover' }}>
-              Project Title
-          </CardTitle>
-
-            {/* Insert Project Description */}
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat...
-          </CardText>
-
-            <CardActions border>
-              <Button colored >Github</Button>
-              <Button colored >Live Demo</Button>
-            </CardActions>
-
-            <CardMenu style={{ color: 'fff' }}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
+        <h1> Coming Soon! </h1>
+          
 
 
         </div>
