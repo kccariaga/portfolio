@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import './App.css';
 import Main from './components/main';
-
+import FooterPage from './components/footer';
 
 class App extends Component {
   render() {
@@ -20,6 +20,7 @@ class App extends Component {
               <Link to="/portfolio/contact">Contact</Link>
             </Navigation>
           </Header>
+
           <Drawer title="Karen Cariaga">
             <Navigation>
               <Link to="/portfolio/">Home</Link>
@@ -29,12 +30,14 @@ class App extends Component {
               <Link to="/portfolio/contact">Contact</Link>
             </Navigation>
           </Drawer>
+
           <Content>
-            <div className="page-content" />
             <Main/>
           </Content>
+
+          <FooterPage/>
         </Layout>
-</div >
+      </div >
     );
   }
 }

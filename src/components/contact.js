@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon} from 'mdbreact';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 
 class Contact extends Component{
 //  var $form = $('form#test-form'),
@@ -48,7 +48,7 @@ class Contact extends Component{
       //   </form>
       // </div>
 
-      
+      <div className="App">
       <div className="contact-grid">
         <MDBContainer>
           <MDBRow>
@@ -162,14 +162,12 @@ class Contact extends Component{
           </MDBRow>
         </MDBContainer>
 
-        <Helmet>
-
+      </div>
           <script data-cfasync="false" 
             type="text/javascript"
             src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
           >
           </script>
-        </Helmet>
       </div>
       
     )
