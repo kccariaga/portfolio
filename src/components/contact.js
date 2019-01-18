@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon} from 'mdbreact';
-
+import { Helmet } from 'react-helmet';
 
 class Contact extends Component{
 //  var $form = $('form#test-form'),
@@ -35,7 +35,7 @@ class Contact extends Component{
     this.setState({ [event.target.name]: event.target.value });
   };
 
-
+  
   render(){
     
     return(
@@ -59,6 +59,7 @@ class Contact extends Component{
                 method="POST" 
                 className="needs-validation"
                 onSubmit={this.submitHandler}
+                target="_blank"
                 Validate  
                 >
                 <p className="h4 text-center bold mb-4" >Contact Me!</p>
@@ -148,18 +149,27 @@ class Contact extends Component{
 
                 {/* Submit Button */}
                 <div className="text-center mt-4">
-                  <MDBBtn type="submit"  color="success">
+                  <MDBBtn type="submit"  color="success" >
                     Send
                   <MDBIcon icon="paper-plane-o" className="ml-2" />
                   </MDBBtn>
+       
+      
                 </div>
               </form>
-
             </MDBCol>
             <MDBCol md="3" class="center"></MDBCol>
           </MDBRow>
         </MDBContainer>
 
+        <Helmet>
+
+          <script data-cfasync="false" 
+            type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+          >
+          </script>
+        </Helmet>
       </div>
       
     )
