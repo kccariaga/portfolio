@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import { Container, Row, Footer, Col } from "mdbreact";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faHtml5 , faCss3, faGithubSquare, faJsSquare} from '@fortawesome/free-brands-svg-icons';
+import { faReact, faHtml5 , faCss3, faGithubSquare, faJsSquare, faYarn} from '@fortawesome/free-brands-svg-icons';
 
 library.add(faReact);
 library.add(faHtml5);
 library.add(faCss3);
 library.add(faGithubSquare);
 library.add(faJsSquare);
+library.add(faYarn);
 
 
 
@@ -25,6 +26,7 @@ return (
       <p>This Website was built with the following tools:</p>
         <div className="footer-tools">
               <FontAwesomeIcon icon={['fab', 'github-square']} size="lg" color="white" />
+              <FontAwesomeIcon icon={['fab', 'yarn']} size="lg" color="white" />
               <FontAwesomeIcon icon={['fab', 'react']} size="lg" color="white"/>
               <FontAwesomeIcon icon={['fab', 'js-square']} size="lg" color="white" />
               <FontAwesomeIcon icon={['fab', 'html5']} size="lg" color="white"/>
