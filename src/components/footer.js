@@ -1,5 +1,16 @@
 import React, { Component } from "react";
 import { Container, Row, Footer, Col } from "mdbreact";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact, faHtml5 , faCss3, faGithubSquare, faJsSquare} from '@fortawesome/free-brands-svg-icons';
+
+library.add(faReact);
+library.add(faHtml5);
+library.add(faCss3);
+library.add(faGithubSquare);
+library.add(faJsSquare);
+
+
 
 class FooterPage extends Component {
 render() {
@@ -9,21 +20,22 @@ return (
 <Footer  className="font-small pt-4 mt-4">
   <Container fluid className="text-center text-md-left">
     <Row>
-      <Col md="3" class="center"></Col>
-      <Col md="6" class="center">
-          <p text-alignment="center">This Website was designed using these tools:</p>
+      <Col md="4" class="center"></Col>
+      <Col md="4" class="center">
+      <p>This Website was built with the following tools:</p>
         <div className="footer-tools">
-          <i class="fab fa-react"></i>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-js-square"></i>
-       
+              <FontAwesomeIcon icon={['fab', 'github-square']} size="lg" color="white" />
+              <FontAwesomeIcon icon={['fab', 'react']} size="lg" color="white"/>
+              <FontAwesomeIcon icon={['fab', 'js-square']} size="lg" color="white" />
+              <FontAwesomeIcon icon={['fab', 'html5']} size="lg" color="white"/>
+              <FontAwesomeIcon icon={['fab', 'css3']} size="lg" color="white" />
+               
         </div>
       </Col>
-      <Col md="3" class="center"></Col>
+      <Col md="4" class="center"></Col>
     </Row>
   </Container>
-  <div className="footer-copyright text-center py-3" >
+  <div className="footer-copyright text-center py-3" color="white" >
     <Container fluid>
       &copy; {new Date().getFullYear()} Copyright{" "}
       Karen Cariaga

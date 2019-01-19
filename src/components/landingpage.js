@@ -9,7 +9,7 @@ class LandingPage extends Component {
         <Grid className = "landing-grid">
           <Cell col={12}>
             <img
-              src="/portfolio/images/profilepic3.jpg"
+              src="/portfolio/images/profilepic2crop.jpg"
               alt="avatar"
               className="avatar-img"
             />
@@ -18,7 +18,6 @@ class LandingPage extends Component {
               <h1>Software Engineer</h1>
               <hr/>
               <p> Java | C | C++ | Python | PostgreSQL | Javascript | HTML | CSS | React | Node </p>
-
 
               <div className="social-links">
                 {/* target:"_blank" ensures that your website stays open on a tab when they click your link */}
@@ -32,8 +31,6 @@ class LandingPage extends Component {
                 <a href="https://github.com/kccariaga" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-github-square" aria-hidden="true" />
                 </a>
-
-
               </div>
             </div>
           </Cell>
