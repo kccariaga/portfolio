@@ -19,7 +19,7 @@ class Projects extends Component {
         <Card shadow={5} style = {{minWidth:'50', margin:'auto'}}>
           <CardTitle style={{ color: 'gray', height: '176px', 
           background:'url(/portfolio/images/letscodetogether.png) center / cover'}}>    
-          Let's Code Together
+          Let's Code Together 
           </CardTitle>
           <CardText>
            Lets Code Together is a Facebook Build Day Hack-a-thon collaboration
