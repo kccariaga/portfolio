@@ -63,7 +63,7 @@ class Projects extends Component {
 
           <CardActions border>
               <Button colored href="https://github.com/JCastelan/mercenary_game" target="_blank">Github</Button>
-            {/* <Button colored >Live Demo(Coming Soon!)</Button> */}
+              <Button colored href="https://drive.google.com/file/d/1JmLN3SDLGCm2-GY848AofhvXegX4mBV4/view?usp=sharing" target="_blank" >Live Demo</Button>
           </CardActions>
 
           <CardMenu style={{ color: 'fff' }}>
