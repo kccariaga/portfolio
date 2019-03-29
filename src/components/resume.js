@@ -13,7 +13,7 @@ class Resume extends Component {
           <Cell col={4}>
             <div style={{ textAlign: 'center' }}>
               <img
-                src="/portfolio/images/profilepic3.jpg"
+                src="/portfolio/images/resumepic.jpg"
                 alt="avatar"
                 style={{ height: '350px' }}
               />
@@ -27,8 +27,6 @@ class Resume extends Component {
               my skills in both front-end and back-end development. 
             </p>
             <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-            <h5>Phone</h5>
-            <p>(916) 225-5645</p>
             <h5>Email</h5>
             <p>karenc.cariaga@gmail.com</p>
             <h5>Website</h5>
@@ -91,7 +89,7 @@ class Resume extends Component {
             />
             <Skills
               skill="SQL"
-              progress={60}
+              progress={85}
             />
             <Skills
               skill="JavaScript"
