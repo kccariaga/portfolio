@@ -59,6 +59,15 @@ class Resume extends Component {
             <Experience
               startYear={2019}
               endYear={"Present"}
+              jobName="Inductive Automation - Software Support Engineer"
+              jobDescription="Troubleshooting through issues for customers with Ignition SCADA/HMI software. 
+              Skills utilized for troubleshooting include but are not limited to:
+              OPC-UA, OPC-DA/COM, SQL, SMTP Servers, Networking, Redundant Systems, Distributed Systems"
+            />
+
+            <Experience
+              startYear={2019}
+              endYear={2019}
               jobName="iD Tech Camps - Brand Ambassador"
               jobDescription="Attending to ground marketing and recruiting events in order to
               spread the word of iD Tech to potential clients and future employees."
