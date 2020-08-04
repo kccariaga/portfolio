@@ -15,9 +15,12 @@ class LandingPage extends Component {
             />
 
             <div className="banner-text">
-              <h1>Software Engineer</h1>
-              <hr/>
-              <p> Java | C | C++ | Python | PostgreSQL | Javascript | HTML | CSS | React | Node </p>
+              {/* <h1>Software Engineer</h1>
+              <hr/> */}
+              <h2>Hello World.</h2>
+              <p> My name is Karen and coding is my passion. Thank you for stumbling upon my personal portfolio. Based in Sacramento, I strive to find new ways 
+                to refine my skills through personal projects and opportunities in my professional work.  </p>
+               <p> Java | C | C++ | Python | SQL | Javascript | HTML | CSS | React | Node </p> 
 
               <div className="social-links">
                 {/* target:"_blank" ensures that your website stays open on a tab when they click your link */}
