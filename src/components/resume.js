@@ -32,7 +32,7 @@ class Resume extends Component {
             <h5>Website</h5>
             <p>https://kccariaga.github.io/portfolio/</p>
 
-            <Button raised accent ripple href="https://drive.google.com/file/d/1WKcQezx-pLe2jW-wNcfdP7oPBG-f8gba/view?usp=sharing" target="_blank">Download My Resume </Button>
+            <Button raised accent ripple href="https://drive.google.com/file/d/1QYCV8rKnpZ4EJL4X8epNciaPa8VfpdBr/view?usp=sharing" target="_blank">Download My Resume </Button>
             <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
           </Cell>
           <Cell className="resume-right-col" col={8}>
