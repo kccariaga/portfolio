@@ -20,19 +20,15 @@ class Resume extends Component {
             </div>
 
             <h2 style={{ paddingTop: '20px' }}>Karen Cariaga</h2>
-            <h4 style={{ color: 'grey' }}>Programmer</h4>
+            <h4 style={{ color: 'grey' }}>Software Engineer</h4>
             <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-            <p>I am a recent graduate of Computer Science who is seeking new
-              opportunities in technology. I am passionate about developing
-              my skills in both front-end and back-end development. 
+            <p>I am a Software Engineer based in the Greater Sacramento Area. I graduated with a Computer Science
+              Degree from the University of California, Santa Cruz in 2018. Since then, I have been honing my skills through my various experiences 
+              from starting as a Software Support Engineer for SCADA/HMI Software and into growing into a Software Engineer role. I am enthusiastic 
+              about continuing to learn and grow into more specialized skills as my career advances.
             </p>
-            <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-            <h5>Email</h5>
-            <p>karenc.cariaga@gmail.com</p>
-            <h5>Website</h5>
-            <p>https://kccariaga.github.io/portfolio/</p>
-
-            <Button raised accent ripple href="https://drive.google.com/file/d/1QYCV8rKnpZ4EJL4X8epNciaPa8VfpdBr/view?usp=sharing" target="_blank">Download My Resume </Button>
+              
+            <Button raised accent ripple href="https://drive.google.com/file/d/1QYCV8rKnpZ4EJL4X8epNciaPa8VfpdBr/view?usp=sharing" target="_blank">Download My Resume</Button>
             <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
           </Cell>
           <Cell className="resume-right-col" col={8}>
@@ -56,9 +52,18 @@ class Resume extends Component {
 
             <h2>Experience</h2>
 
+
             <Experience
               startYear={2019}
               endYear={"Present"}
+              jobName="Inductive Automation - Software Engineer"
+              jobDescription="Coordinated with a team of developers to break down the internal CRM Monolith into microservices running on an EC2 Instance on AWS. Developed Web APIs using
+              Java Frameworks such as Javalin and Quarkus. Also contributed updates and new features to CI/CD tools like Gradle and Jenkins "
+            />
+
+            <Experience
+              startYear={2019}
+              endYear={2021}
               jobName="Inductive Automation - Software Support Engineer"
               jobDescription="Troubleshooting through issues for customers with Ignition SCADA/HMI software. 
               Skills utilized for troubleshooting include but are not limited to:
@@ -83,39 +88,14 @@ class Resume extends Component {
                  of up to 10 students(ages 13-18)."
             />
             <hr style={{ borderTop: '3px solid #e22947' }} />
-            <h2>Skills</h2>
-            <Skills
-              skill="C/C++"
-              progress={100}
-            />
-            <Skills
-              skill="Java"
-              progress={100}
-            />
-            <Skills
-              skill="Python"
-              progress={100}
-            />
-            <Skills
-              skill="SQL"
-              progress={85}
-            />
-            <Skills
-              skill="JavaScript"
-              progress={70}
-            />
-            <Skills
-              skill="HTML"
-              progress={90}
-            />
-            <Skills
-              skill="CSS"
-              progress={90}
-            />
-            <Skills
-              skill="React"
-              progress={60}
-            />
+
+       
+            {/* <h2>Skills</h2> */}
+            {/* <Skills */}
+              {/* skill="Java" */}
+              {/* progress={100} */}
+            {/* /> */}
+
 
           </Cell>
         </Grid>

@@ -17,7 +17,7 @@ class App extends Component {
               <Link to="/portfolio/resume">Resume</Link>
               {/* <Link to="/portfolio/about">About Me</Link> */}
               <Link to="/portfolio/projects">Projects</Link>
-              <Link to="/portfolio/contact">Contact</Link>
+              {/* <Link to="/portfolio/contact">Contact</Link> */}
             </Navigation>
           </Header>
 
@@ -27,7 +27,7 @@ class App extends Component {
               <Link to="/portfolio/resume">Resume</Link>
               {/* <Link to="/portfolio/about">About Me</Link> */}
               <Link to="/portfolio/projects">Projects</Link>
-              <Link to="/portfolio/contact">Contact</Link>
+              {/* <Link to="/portfolio/contact">Contact</Link> */}
             </Navigation>
           </Drawer>
 
